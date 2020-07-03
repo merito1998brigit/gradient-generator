@@ -1,0 +1,23 @@
+{
+  "name": "gradiant",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "engines": {
+    "node": "12.16.1",
+    "npm":"6.13.4"
+  },
+  "scripts": {
+    "start":"node server",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "heroku-postbuild":"NPM_CONFIG_PRODUCTION=false npm install --prefix gradiant-app && npm run build --prefix gradiant-app"
+  },
+  "author": "merito",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.20",
+    "node-html-to-image": "^2.1.1"
+  }
+}
