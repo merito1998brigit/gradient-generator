@@ -4,6 +4,7 @@ const croc=require('cors')
 const connectDB = require('./config/Database');
 const path= require('path');
 //connect database
+//NPM_CONFIG_PRODUCTION=false npm install --prefix gradiant-app && npm run build --prefix gradiant-app
 connectDB();
 //middleware
 app.use(express.json());
