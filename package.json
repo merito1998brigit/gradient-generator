@@ -11,7 +11,7 @@
   "scripts": {
     "start":"node server",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "heroku-postbuild":"NPM_CONFIG_PRODUCTION=false yarn add --prefix gradiant-app && yarn run build --prefix gradiant-app"
+    "heroku-postbuild":"NPM_CONFIG_PRODUCTION=false yarn  --prefix gradiant-app && yarn run build --prefix gradiant-app"
   },
   "author": "merito",
   "license": "ISC",
