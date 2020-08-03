@@ -1,24 +1,24 @@
 {
-  "name": "gradiant",
-  "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
-  "engines": {
-    "node": "12.16.1",
-    "npm":"6.13.4",
-    "yarn":"1.22.4"
-  },
-  "scripts": {
-    "start":"node server",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "heroku-postbuild":"cd gradiant-app && yarn && yarn run build"
-  },
-  "author": "merito",
-  "license": "ISC",
-  "dependencies": {
-    "cors": "^2.8.5",
-    "express": "^4.17.1",
-    "mongoose": "^5.9.20",
-    "node-html-to-image": "^2.1.1"
-  }
+   "name": "gradiant",
+   "version": "1.0.0",
+   "description": "",
+   "main": "server.js",
+   "engines": {
+      "node": "12.16.1",
+      "npm": "6.13.4",
+      "yarn": "1.22.4"
+   },
+   "scripts": {
+      "start": "node server",
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "heroku-postbuild": "cd gradient--app && npm install && npm run build"
+   },
+   "author": "merito",
+   "license": "ISC",
+   "dependencies": {
+      "cors": "^2.8.5",
+      "express": "^4.17.1",
+      "mongoose": "^5.9.20",
+      "node-html-to-image": "^2.1.1"
+   }
 }
