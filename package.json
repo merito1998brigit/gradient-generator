@@ -9,7 +9,9 @@
       "yarn": "1.22.4"
    },
    "scripts": {
-      "start": "node server",
+      "server": "node server",
+      "client": "npm start --prefix gradient--app",
+      "dev": "concurrently \"npm run server\" \"npm run client\"",
       "test": "echo \"Error: no test specified\" && exit 1",
       "heroku-postbuild": "cd gradient--app && npm install && npm run build"
    },
